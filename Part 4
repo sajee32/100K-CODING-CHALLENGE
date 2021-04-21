@@ -86,3 +86,21 @@ int main(void) {
 	}
 	return EXIT_SUCCESS;
 }
+6) For printing reverse stars
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i,j,k;
+
+	setbuf(stdout,NULL);
+	printf("give number of rows");
+	scanf("%d",&i);
+	for(j=i;j>0;j--){
+		for(k=1;k<=j;k++){
+			printf("*");
+		}printf("\n");
+
+	}
+	return EXIT_SUCCESS;
+}
