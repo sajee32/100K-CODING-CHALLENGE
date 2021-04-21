@@ -45,3 +45,26 @@ int main(void) {
 	printf("the sum of even number is %d",sum);
 	return EXIT_SUCCESS;
 }
+4)Code to check prime number
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int m,i,flag;
+	setbuf(stdout,NULL);
+	printf("give a number");
+	scanf("%d",&i);
+	flag=0;
+	for (m=1;m<=i/2;m++){
+		if (i%m==0){
+			flag=1;
+			break;
+		}
+	}
+	if(flag==0){
+		printf("its prime");}
+	else { printf("not prime");}
+
+	return EXIT_SUCCESS;
+}
