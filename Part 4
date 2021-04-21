@@ -1,0 +1,47 @@
+1) The code for printing numbers from 1 to 100 using for loop is as given below. We have used Eclipse to do this c programe.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i;
+	for(i=1;i<=100;i++)
+	{printf("%d\n",i);}
+	return EXIT_SUCCESS;
+}
+comment: /n is used for starting new line.
+
+2) The code for taking a value and giving the sume of number from 1 to the value user given is
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i,m,sum;
+	setbuf(stdout,NULL);
+	sum=0;
+	printf("Please give one number");
+	scanf("%d",&i);
+	for(m=1;m<=i;m++){
+		sum=sum+m;
+	}
+	printf("The sume of number is %d",sum);
+	return EXIT_SUCCESS;
+}
+3) Giving sum of even numbers from 2 to user given number
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int i, m, sum;
+	setbuf(stdout,NULL);
+	sum=0;
+	printf("give a number");
+	scanf("%d",&i);
+	for(m=2;m<=i;m++){
+		sum=sum+2;
+	}
+	printf("the sum of even number is %d",sum);
+	return EXIT_SUCCESS;
+}
