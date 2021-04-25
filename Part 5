@@ -42,4 +42,33 @@ int main(void) {
 	printf("sum is:%d",m);
 	return EXIT_SUCCESS;
 }
+3)Code for search key
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(void) {
+	int i;
+	int values[100];
+	int limit;
+	int searchkey;
+	setbuf(stdout,NULL);
+	int flag=0;
+	printf("enter limit");
+	scanf("%d",&limit);
+	printf("give numbers");
+	for(i=0;i<limit;i++){
+		scanf("%d",&values[i]);
+	}
+	printf("please enter search key");
+	scanf("%d",&searchkey);
+	for(i=0;i<limit;i++){
+		if(searchkey==values[i]){flag=1;}
+	break;};
+	if(flag==1){
+		printf ("value is at %d",i+1);
+	}else{
+		printf("value not find");
+	}
+	return EXIT_SUCCESS;
+}
 
