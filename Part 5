@@ -1,0 +1,21 @@
+% Array and Array operations.
+1)Code for printing all the values given in array with a 5 number capacity.%d\t is for getting a space in the output
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a[5];
+	int i;
+	setbuf(stdout,NULL);
+	printf("give 5 numbers");
+	for (i=0;i<5;i++){
+	scanf("%d",&a[i]);}
+	printf("printing all values");
+	for(i=0;i<5;i++){
+		printf("%d,",a[i]);
+	}
+	return EXIT_SUCCESS;
+}
+
