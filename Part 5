@@ -19,3 +19,27 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
+2)Code for adding numbers in a 5 membered array
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a[5];
+	int i;
+	int m;
+	m=0;
+
+	setbuf(stdout,NULL);
+	printf("give 5 numbers");
+	for (i=0;i<5;i++){
+	scanf("%d",&a[i]);}
+	printf("printing all values");
+	for(i=0;i<5;i++){
+		m=m+a[i];
+	}
+	printf("sum is:%d",m);
+	return EXIT_SUCCESS;
+}
+
