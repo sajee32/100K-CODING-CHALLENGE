@@ -1,0 +1,42 @@
+We studied string array in this part. %S is used for string. there is '&' required for string inside scanf.
+
+The code to print the given name using string
+
+#include <stdio.h>
+#include <stdlib.h>
+	int main(void) {
+		char name[20];
+		setbuf(stdout,NULL);
+		printf("give your name");
+		scanf("%s",name);
+		printf("the name is %s",name);
+		return EXIT_SUCCESS;
+	}
+
+Lets use Multidimensional array
+
+2) Code for printing the given numbers into an array
+
+
+#include <stdio.h>
+#include <stdlib.h>
+	int main(void) {
+		int i,j,a[i][i];
+		printf("enter values");
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				scanf("%d",&a[i][j]);
+			}
+		}
+		printf("entered values are:\n");
+		for(i=0;i<3;i++){
+					for(j=0;j<3;j++){
+						printf("%d\t",a[i][j]);
+					}
+					printf("\n");
+				}
+
+		return EXIT_SUCCESS;
+	}
+  
+  
