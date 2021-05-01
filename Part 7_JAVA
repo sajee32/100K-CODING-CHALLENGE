@@ -1,1 +1,14 @@
+Install Eclipse for Java. Create a project,then package and then class. The guidelines for installing can be found here [https://www.vogella.com/tutorials/Eclipse/article.html]
 
+1)Code to Print something
+
+   package first;
+
+public class One {
+
+	public static void main(String ar[]) {
+		System.out.println("hello, i DID IT");
+	}
+}
+
+   
