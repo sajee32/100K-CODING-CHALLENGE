@@ -11,4 +11,22 @@ public class One {
 	}
 }
 
-   
+2)Java code to print some of two numbers
+
+package first;
+
+import java.util.Scanner;
+
+public class One {
+
+	public static void main(String ar[]) {
+		System.out.println("enter 2 number");
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=a+b;
+				
+		System.out.println("Result:"+c);
+	}
+
+}
