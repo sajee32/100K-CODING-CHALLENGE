@@ -1,0 +1,18 @@
+Lets setup the initial frame. The corresponding JAVA code is following. We using swing here, which is a package 
+
+import javax.swing.JFrame;
+
+public class Calculator {
+	public Calculator() {
+		JFrame jf=new JFrame("Calculator");
+		jf.setLayout(null);
+		jf.setSize(600, 600);
+		jf.setVisible(true);
+		
+
+}
+	public static void main(String[] args) {
+		new Calculator();
+		
+	}
+}
